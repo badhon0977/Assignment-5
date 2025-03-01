@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body class="min-h-screen transition-colors duration-500 ease-in-out bg-[#f4f7ff] ">
+<body class="min-h-screen transition-colors duration-500 ease-in-out bg-[#f4f7ff]">
 
     <!-- nav section -->
 
@@ -35,7 +35,7 @@
             <div class="flex space-x-[38px]">
                 <div class="w-[123px] h-[64px] rounded-[32px] bg-[#f4f7ff] flex items-center justify-around">
                     <img class="w-[32px] h-[32px]" src="./assets/checkbox.png">
-                    <h1 class="poppins font-bold text-[2rem]">23</h1>
+                    <h1 id="count-number" class="poppins font-bold text-[2rem]">23</h1>
                 </div>
                 <div id="theme-btn"
                     class="w-[64px] h-[64px] bg-[#f4f7ff] rounded-full flex items-center justify-center">
@@ -49,9 +49,9 @@
     <!-- main section -->
 
     <main class="container mx-auto mt-[20px] flex space-x-[24px]">
-        <div class="w-[1146px] h-[750px] rounded-[16px] bg-white">
+        <div class="w-[1146px] h-[950px] rounded-[16px] bg-white">
 
-            <div class="flex justify-around pt-[24px]">
+            <div class="flex justify-around pt-[24px] pb-[32px]">
                 <!-- Task Assigned box -->
                 <div
                     class="w-[263px] h-[128px] bg-[#f4f7ff] rounded-[12px] flex justify-center items-center space-x-[20px]">
@@ -60,7 +60,7 @@
                     </div>
                     <div>
                         <p class="poppins font-medium text-[1rem] text-[#00303C]">Task Assigned </p>
-                        <h1 class="poppins font-bold text-[2rem]">05</h1>
+                        <h1 id="task-number" class="poppins font-bold text-[2rem]">05</h1>
                     </div>
                 </div>
 
@@ -83,12 +83,142 @@
                     </div>
                 </div>
             </div>
-
+            <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+            <!-- all task card section -->
+            <section class="grid grid-cols-3 py-[24px] px-[24px] gap-5">
+                <!-- Fix Mobile Button Issue box -->
+                <div class="w-[342px] bg-[#f4f7ff] rounded-[16px] p-[15px]">
+                    <div class="w-[114px] h-[40px] rounded-[8px] bg-white flex items-center justify-center">
+                        <p class="poppins font-normal text-[1rem] text-[#00303C]">ShopEase</p>
+                    </div>
+                    <h1 class="poppins font-medium text-[1.5rem] text-[#00303C]">Fix Mobile Button Issue </h1>
+                    <div class="w-[294px] h-[150px] bg-white rounded-[8px] p-[16px]">
+                        <p class="poppins font-normal text-[1rem] text-[#000000]">Debug using Chrome DevTools, check for
+                            overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+                    <div class="flex justify-around">
+                        <div>
+                            <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
+                            <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                                class="poppins font-medium text-[1rem] text-white ">complete</span></button>
+                    </div>
+                </div>
+                <!-- Add Dark Mode box -->
+                <div class="w-[342px] bg-[#f4f7ff] rounded-[16px] p-[15px]">
+                    <div class="w-[114px] h-[40px] rounded-[8px] bg-white flex items-center justify-center">
+                        <p class="poppins font-normal text-[1rem] text-[#00303C]">CloudSync</p>
+                    </div>
+                    <h1 class="poppins font-medium text-[1.5rem] text-[#00303C]">Add Dark Mode</h1>
+                    <div class="w-[294px] h-[150px] bg-white rounded-[8px] p-[16px]">
+                        <p class="poppins font-normal text-[1rem] text-[#000000]">Store the user's preference in
+                            localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    </div>
+                    <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+                    <div class="flex justify-around">
+                        <div>
+                            <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
+                            <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                                class="poppins font-medium text-[1rem] text-white ">complete</span></button>
+                    </div>
+                </div>
+                <!-- Optimize  Home page box -->
+                <div class="w-[342px] bg-[#f4f7ff] rounded-[16px] p-[15px]">
+                    <div class="w-[114px] h-[40px] rounded-[8px] bg-white flex items-center justify-center">
+                        <p class="poppins font-normal text-[1rem] text-[#00303C]">SwiftPay</p>
+                    </div>
+                    <h1 class="poppins font-medium text-[1.5rem] text-[#00303C]">Optimize Home page</h1>
+                    <div class="w-[294px] h-[150px] bg-white rounded-[8px] p-[16px]">
+                        <p class="poppins font-normal text-[1rem] text-[#000000]">Debug using Chrome DevTools, check for
+                            overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+                    <div class="flex justify-around">
+                        <div>
+                            <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
+                            <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                                class="poppins font-medium text-[1rem] text-white ">complete</span></button>
+                    </div>
+                </div>
+                <!-- Add new emoji 🤲 box -->
+                <div class="w-[342px] bg-[#f4f7ff] rounded-[16px] p-[15px]">
+                    <div class="w-[114px] h-[40px] rounded-[8px] bg-white flex items-center justify-center">
+                        <p class="poppins font-normal text-[1rem] text-[#00303C]">Meta</p>
+                    </div>
+                    <h1 class="poppins font-medium text-[1.5rem] text-[#00303C]">Add new emoji 🤲</h1>
+                    <div class="w-[294px] h-[150px] bg-white rounded-[8px] p-[16px]">
+                        <p class="poppins font-normal text-[1rem] text-[#000000]">Debug using Chrome DevTools, check for
+                            overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+                    <div class="flex justify-around">
+                        <div>
+                            <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
+                            <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                                class="poppins font-medium text-[1rem] text-white ">complete</span></button>
+                    </div>
+                </div>
+                <!-- Integrate OpenAI API box -->
+                <div class="w-[342px] bg-[#f4f7ff] rounded-[16px] p-[15px]">
+                    <div class="w-[114px] h-[40px] rounded-[8px] bg-white flex items-center justify-center">
+                        <p class="poppins font-normal text-[1rem] text-[#00303C]">Google LLC</p>
+                    </div>
+                    <h1 class="poppins font-medium text-[1.5rem] text-[#00303C]">Integrate OpenAI API</h1>
+                    <div class="w-[294px] h-[150px] bg-white rounded-[8px] p-[16px]">
+                        <p class="poppins font-normal text-[1rem] text-[#000000]">Debug using Chrome DevTools, check for
+                            overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+                    <div class="flex justify-around">
+                        <div>
+                            <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
+                            <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                                class="poppins font-medium text-[1rem] text-white ">complete</span></button>
+                    </div>
+                </div>
+                <!-- Improve Job searching box -->
+                <div class="w-[342px] bg-[#f4f7ff] rounded-[16px] p-[15px]">
+                    <div class="w-[114px] h-[40px] rounded-[8px] bg-white flex items-center justify-center">
+                        <p class="poppins font-normal text-[1rem] text-[#00303C]">Glassdoar</p>
+                    </div>
+                    <h1 class="poppins font-medium text-[1.5rem] text-[#00303C]">Improve Job searching </h1>
+                    <div class="w-[294px] h-[150px] bg-white rounded-[8px] p-[16px]">
+                        <p class="poppins font-normal text-[1rem] text-[#000000]">Debug using Chrome DevTools, check for
+                            overlapping elements, and ensure onClick works properly
+                            and ensure onClick works properly</p>
+                    </div>
+                    <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+                    <div class="flex justify-around">
+                        <div>
+                            <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
+                            <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                                class="poppins font-medium text-[1rem] text-white ">complete</span></button>
+                    </div>
+                </div>
+            </section>
         </div>
         <!-- Activity Log section -->
-        <div class="w-[366px] h-[750px] rounded-[16px] bg-white">
+        <section>
+            <div class="w-[366px] h-[950px] rounded-[16px] bg-white">
 
-        </div>
+            </div>
+        </section>
 
     </main>
 
