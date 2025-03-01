@@ -22,12 +22,12 @@
     </style>
 </head>
 
-<body>
+<body class="min-h-screen transition-colors duration-500 ease-in-out bg-[#f4f7ff]">
 
     <!-- nav section -->
-    <section class="container mx-auto">
-        <nav>
-            <div class="navbar h-[100px] rounded-[16px] bg-blue-400 flex justify-between p-[24px]">
+    <section>
+        <nav class="container mx-auto pt-[24px]">
+            <div class="navbar h-[100px] rounded-[16px] bg-white flex justify-between p-[24px]">
                 <div class="flex items-center space-x-[11.1px]">
                     <img src="./assets/logo.png">
                     <h1 class="poppins text-[2.229rem] font-light">Dev<span class="font-bold">Board</span></h1>
@@ -35,9 +35,9 @@
                 <div class="flex space-x-[38px]">
                     <div class="w-[123px] h-[64px] rounded-[32px] bg-[#f4f7ff] flex items-center justify-around">
                         <img class="w-[32px] h-[32px]" src="./assets/checkbox.png">
-                        <h1 class="font-bold text-[2rem]">23</h1>
+                        <h1 class="poppins font-bold text-[2rem]">23</h1>
                     </div>
-                    <div class="w-[64px] h-[64px] bg-[#f4f7ff] rounded-full flex items-center justify-center">
+                    <div id="theme-btn" class="w-[64px] h-[64px] bg-[#f4f7ff] rounded-full flex items-center justify-center">
                         <img src="./assets/theme-btn.png">
                     </div>
                 </div>
@@ -45,6 +45,7 @@
         </nav>
     </section>
 
+   <script src="./Javascript file/colorChange.js"></script>
 </body>
 
 </html>
