@@ -60,7 +60,7 @@
                     </div>
                     <div>
                         <p class="poppins font-medium text-[1rem] text-[#00303C]">Task Assigned </p>
-                        <h1 id="task-number" class="poppins font-bold text-[2rem]">05</h1>
+                        <h1 id="task-number" class="poppins font-bold text-[2rem]">06</h1>
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@
                             <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
                             <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                        <button class="complete-btn bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
                                 class="poppins font-medium text-[1rem] text-white ">complete</span></button>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
                             <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                        <button class="complete-btn bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
                                 class="poppins font-medium text-[1rem] text-white ">complete</span></button>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                             <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
                             <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                        <button class="complete-btn bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
                                 class="poppins font-medium text-[1rem] text-white ">complete</span></button>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                             <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
                             <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                        <button class="complete-btn bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
                                 class="poppins font-medium text-[1rem] text-white ">complete</span></button>
                     </div>
                 </div>
@@ -186,7 +186,7 @@
                             <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
                             <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                        <button class="complete-btn bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
                                 class="poppins font-medium text-[1rem] text-white ">complete</span></button>
                     </div>
                 </div>
@@ -207,7 +207,7 @@
                             <p class="poppins font-normal text-[0.875rem] text-[#00303C]">Deadline</p>
                             <p class="poppins font-medium text-[1rem] text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
+                        <button class="complete-btn bg-[#3752FD] w-[135px] h-[44px] rounded-[8px]"><span
                                 class="poppins font-medium text-[1rem] text-white ">complete</span></button>
                     </div>
                 </div>
@@ -215,15 +215,15 @@
         </div>
         <!-- Activity Log section -->
         <section>
-            <div class="w-[366px] h-[950px] rounded-[16px] bg-white">
+            <div id="activity-container" class="w-[366px] h-[950px] rounded-[16px] bg-white">
                 <div class="flex justify-center items-center gap-4 pt-5">
                     <img src="./assets/activity.png" alt="">
                     <p class="poppins font-medium text-[1.25rem] text-[#00303C]">Activity Log</p>
                 </div>
                 <div class="flex justify-center mt-[15px]">
-                    <button class="poppins bg-[#3752FD] text-[#FFFFFF] w-[150px] h-[44px] rounded-[8px]">Clear History</button>
+                    <button id="clear-history-btn" class="poppins bg-[#3752FD] text-[#FFFFFF] w-[150px] h-[44px] rounded-[8px]">Clear History</button>
                 </div>
-                <div class="border-t-2 border-dashed border-gray-300 w-full my-4"></div>
+                <div class="logs-update border-t-2 border-dashed border-gray-300 w-full my-4"></div>
             </div>
         </section>
 
@@ -231,6 +231,7 @@
 
     <script src="./Javascript file/colorChange.js"></script>
     <script src="./Javascript file/date.js"></script>
+    <script src="./Javascript file/taskComplete.js"></script>
 </body>
 
 </html>

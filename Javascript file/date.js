@@ -1,24 +1,80 @@
+// function updateDate() {
+//   let today = new Date();
+
+//   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+//   let dayName = days[today.getDay()];
+
+//   let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+//   let monthName = months[today.getMonth()];
+
+//   let date = today.getDate();
+//   let year = today.getFullYear();
+
+//   document.getElementById("date").innerHTML =
+//       `<p class="text-[#00303C] text-[1.375rem] font-normal">${dayName}, <br>
+//           <span class="font-bold text-[1.375rem]">${monthName} ${date} ${year}</span>
+//       </p>`;
+// }
+
+// function scheduleMidnightUpdate() {
+//   let now = new Date();
+//   let midnight = new Date();
+//   midnight.setHours(24, 0, 0, 0);
+//   let timeUntilMidnight = midnight.getTime() - now.getTime();
+
+//   console.log(`Next update in: ${Math.round(timeUntilMidnight / 1000)} seconds`);
+
+//   setTimeout(() => {
+//       updateDate();
+//       scheduleMidnightUpdate();
+//   }, timeUntilMidnight);
+// }
+
+// updateDate();
+// scheduleMidnightUpdate();
+
 function updateDate() {
-    let today = new Date();
+  let today = new Date();
 
-    
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    let dayName = days[today.getDay()];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
 
-     
-    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    let monthName = months[today.getMonth()];
+  let dayName = days[today.getDay()];
+  let monthName = months[today.getMonth()];
+  let date = today.getDate();
+  let year = today.getFullYear();
 
-    // Get Date and Year
-    let date = today.getDate();
-    let year = today.getFullYear();
-
-    // Set the date inside the div
-    document.getElementById("date").innerHTML = 
-        `<p class="text-[#00303C] text-[1.375rem] font-normal">${dayName}, <br>
-            <span class="font-bold text-[1.375rem]">${monthName} ${date} ${year}</span>
-        </p>`;
+  document.getElementById(
+    "date"
+  ).innerHTML = `<p class="text-[#00303C] text-[1.375rem] font-normal">${dayName}, <br>
+           <span class="font-bold text-[1.375rem]">${monthName} ${date} ${year}</span>
+       </p>`;
 }
 
-// Call it when the page loads
-window.onload = updateDate;
+function scheduleMidnightUpdate() {
+  let now = new Date();
+  let midnight = new Date(now);
+  midnight.setHours(24, 0, 0, 0);
+  let timeUntilMidnight = midnight - now;
+
+  setTimeout(function () {
+    updateDate();
+    scheduleMidnightUpdate();
+  }, timeUntilMidnight);
+}
+
+updateDate();
+scheduleMidnightUpdate();
