@@ -6,11 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBoard</title>
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- daisyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins {
+            font-family: "Poppins", serif;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- nav section -->
+    <section class="container mx-auto">
+        <nav>
+            <div class="navbar h-[100px] rounded-[16px] bg-blue-400 flex justify-between p-[24px]">
+                <div class="flex items-center space-x-[11.1px]">
+                    <img src="./assets/logo.png">
+                    <h1 class="poppins text-[2.229rem] font-light">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex space-x-[38px]">
+                    <div class="w-[123px] h-[64px] rounded-[32px] bg-[#f4f7ff] flex items-center justify-around">
+                        <img class="w-[32px] h-[32px]" src="./assets/checkbox.png">
+                        <h1 class="font-bold text-[2rem]">23</h1>
+                    </div>
+                    <div class="w-[64px] h-[64px] bg-[#f4f7ff] rounded-full flex items-center justify-center">
+                        <img src="./assets/theme-btn.png">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
 
 </body>
 
