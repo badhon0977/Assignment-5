@@ -1,5 +1,3 @@
-//
-
 window.onload = function () {
   // Get elements
   let completeButtons = document.getElementsByClassName("complete-btn");
